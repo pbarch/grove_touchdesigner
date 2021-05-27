@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 0,
+			"minor" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,7 +37,6 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
-		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontsize" : 12.0,
@@ -150,24 +149,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-57",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1218.0, 553.0, 32.0, 22.0 ],
-					"text" : "print"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-52",
-					"linecount" : 5,
+					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 75.0, 990.0, 35.0, 76.0 ],
+					"patching_rect" : [ 75.0, 990.0, 39.0, 62.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 780.0, 39.0, 109.0, 22.0 ],
 					"text" : "open audio setings"
@@ -357,7 +345,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u263006372"
+					"varname" : "u676001670"
 				}
 
 			}
@@ -443,8 +431,8 @@
 					"presentation_rect" : [ 544.0, 524.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_invisible" : 1,
 							"parameter_longname" : "calmVolume",
+							"parameter_invisible" : 1,
 							"parameter_shortname" : "calmVolume",
 							"parameter_type" : 3
 						}
@@ -469,11 +457,11 @@
 					"presentation_rect" : [ 139.0, 524.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_invisible" : 1,
-							"parameter_linknames" : 1,
 							"parameter_longname" : "activeVolume",
+							"parameter_invisible" : 1,
 							"parameter_shortname" : "number[1]",
-							"parameter_type" : 3
+							"parameter_type" : 3,
+							"parameter_linknames" : 1
 						}
 
 					}
@@ -501,9 +489,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1135.0, 15.0, 383.0, 40.0 ],
+					"patching_rect" : [ 1135.0, 15.0, 391.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 45.0, 30.0, 383.0, 40.0 ],
+					"presentation_rect" : [ 45.0, 30.0, 391.0, 40.0 ],
 					"text" : "GROVE AUDIO PLAYBACK "
 				}
 
@@ -612,10 +600,10 @@
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[2]",
 							"parameter_mmax" : 6.0,
-							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0
 						}
 
 					}
@@ -775,12 +763,12 @@
 					"presentation_rect" : [ 45.0, 90.0, 285.0, 166.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_initial" : [ 0 ],
-							"parameter_initial_enable" : 1,
 							"parameter_longname" : "live.text",
+							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1,
+							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "live.text",
+							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_type" : 2
 						}
 
@@ -807,10 +795,10 @@
 					"presentation_rect" : [ 375.0, 152.5, 495.0, 76.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 0 ],
-							"parameter_initial_enable" : 1,
 							"parameter_longname" : "live.slider",
+							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "master",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 1
@@ -1132,10 +1120,10 @@
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[1]",
 							"parameter_mmax" : 6.0,
-							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0
 						}
 
 					}
@@ -1284,10 +1272,10 @@
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
-							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0
 						}
 
 					}
@@ -2267,14 +2255,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-57", 0 ],
-					"order" : 2,
-					"source" : [ "obj-42", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-46", 0 ],
 					"source" : [ "obj-45", 0 ]
 				}
@@ -3185,18 +3165,17 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-74" : [ "live.gain~[2]", "live.gain~", 0 ],
 			"obj-16" : [ "activeVolume", "number[1]", 0 ],
 			"obj-17" : [ "calmVolume", "calmVolume", 0 ],
 			"obj-19" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-53" : [ "live.slider", "master", 0 ],
 			"obj-54" : [ "live.text", "live.text", 0 ],
+			"obj-53" : [ "live.slider", "master", 0 ],
 			"obj-7" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-74" : [ "live.gain~[2]", "live.gain~", 0 ],
 			"parameterbanks" : 			{
 
 			}
-,
-			"inherited_shortname" : 1
+
 		}
 ,
 		"dependency_cache" : [  ],
